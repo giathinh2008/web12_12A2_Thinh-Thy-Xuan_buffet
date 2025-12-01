@@ -1,0 +1,353 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body{
+font-family: "Tahoma", sans-serif;
+}
+.heading{
+text-align: center;
+}
+
+.heading h1{
+font-size: 2rem;
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+.heading p{
+font-size: 1.1rem;
+font-style: italic;
+color: gray;
+margin-bottom: 10px;
+}
+.heading--white{
+color: white;
+}
+.heading--white p{
+color: white;
+}
+
+.spacing{
+padding: 85px 20px;
+}
+
+header{
+background-color:rgb(90, 9, 9);
+display: flex;
+justify-content: space-between;
+z-index: 999;
+width: 100%;
+}
+header ul{
+margin: 0;
+}
+.nav_item{
+z-index: 9999;
+}
+
+header > nav > ul > li{
+list-style: none;
+}
+header > nav > ul > li:hover{
+background-color: #ccc;
+}
+header > nav > ul > li:hover a{
+color: black;
+}
+header > nav > ul > li:hover i{
+color: black;
+}
+header nav ul{
+display: flex;
+}
+
+header nav > ul a{
+text-decoration: none;
+padding: 12px 24px;
+display: block;
+color: white;
+font-size: 1.1rem;
+text-transform: uppercase;
+}
+header nav > ul a:hover{
+background-color: #ccc;
+}
+
+.header_search>i {
+color: white;
+font-size: 1.1rem;
+padding: 14px 24px;
+}
+.header_search>i:hover{
+background-color: red;
+}
+
+.nav_more{
+display: flex;
+position: relative;
+align-items: center;
+}
+.nav_more .nav_item{
+position: absolute;
+top: 100%;
+left: 0;
+background-color: white;
+width: 150%;
+opacity: 0;
+}
+.nav_more:hover .nav_item{
+opacity: 1;
+}
+.nav_more > a{
+padding-right: 5px;
+}
+.nav_more > i {
+color: white;
+padding-right: 24px;
+}
+.nav_more > i:hover{
+color: black;
+}
+
+.nav_more .nav_item a{
+color: black;
+text-transform: capitalize;
+display: block;
+padding: 10px 5px;
+}
+
+.carouselTheBand{
+margin-top: 60px;
+}
+
+.carouselTheBand .carousel-item{
+height: 800px;
+}
+
+
+.band_content{
+max-width:800px;
+margin: 0 auto;
+}
+
+.band_content > p{
+text-align: justify;
+line-height: 1.2rem;
+word-spacing: 1px;
+}
+.band_member{
+display: flex;
+justify-content: space-between;
+}
+
+.band_item{
+width: 160px;
+}
+.band_item h5{
+font-size: 15px;
+padding-bottom: 20px;
+text-align: center;
+color: rgb(215, 32, 0);
+}
+.band_item img{
+width:100%;
+}
+
+
+.tourDate{
+background-color: black;
+}
+.tour_content{
+max-width:800px;
+margin: 0 auto;
+}
+.tour_date{
+background-color: white;
+margin:25px 0;
+}
+.tour_date ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.tour_date ul li{
+display: flex;
+border-bottom: 1px solid black;
+}
+.tour_date li p{
+opacity: 0.6;
+margin: 10px;
+}
+.tour_date li .tour_dateSale{
+opacity: 1;
+background-color: rgb(215, 10, 10);
+color: white;
+padding: 0 7px;
+}
+.tour_date li .tour_dateThree{
+opacity: 1;
+margin-left: auto;
+margin-right: 30px;
+background-color: black;
+padding: 1px 10px;
+color: white;
+border-radius: 50%;
+}
+
+.tour_tickets{
+display: flex;
+justify-content: space-between;
+}
+.tour_item{
+background-color: white;
+width: 32%;
+}
+.tour_item img{
+width: 100%;
+}
+
+.tour_item h6{
+font-size: 1.1rem;
+padding: 20px 10px;
+margin: 0;
+}
+.tour_item p{
+margin: 0;
+}
+.tour_item p:first-of-type{
+opacity: 0.6;
+padding: 0 0 20px 10px;
+
+}
+
+.tour_item p:last-of-type{
+padding-left: 10px;
+line-height: 1.4rem;
+}
+.tour_item button{
+padding: 10px 20px;
+margin: 15px 20px;
+border: none;
+background-color: black;
+color: white;
+}
+.tour_item button:hover{
+background-color: #ccc;
+color: black;
+}
+
+.contact_content{
+display: flex;
+justify-content: space-between;
+max-width: 800px;
+margin: 0 auto;
+margin-top: 60px;
+}
+
+.contact_left .contact_item{
+display: flex;
+margin-bottom: 5px;
+align-items: center;
+}
+.contact_left .contact_item p{
+font-size: 1.2rem;
+margin: 0;
+margin-left: 20px;
+}
+.contact_right .contact_input{
+display: flex;
+margin-bottom: 10px;
+
+}
+.contact_right input{
+padding: 10px;
+border: 1px solid #ccc;
+width: 100%;
+}
+.contact_input input:first-of-type{
+margin-right: 20px;
+
+}
+.contact_right button{
+float: right;
+margin-top: 15px;
+padding: 10px 15px;
+font-size: 1.1rem;
+border: none;
+background-color: black;
+color: white;
+}
+.contact_right button:hover{
+background-color: #ccc;
+color: rgb(163, 0, 0);
+}
+
+.imagine{
+background-image: url('');
+width: 100%;
+height: 700px;
+background-size: cover;
+filter: grayscale(50%);
+margin: 85px 0;
+}
+
+
+footer{
+color: rgb(203, 202, 202);
+text-align: center;
+margin-bottom: 85px;
+
+}
+footer .footer_icon{
+width: 100%;
+font-size: 1.5rem;
+margin-bottom: 20px;
+}
+footer p a{
+color:rgb(203, 202, 202) ;
+
+}
+
+.modal {
+display: none;
+position: fixed;
+z-index: 99999;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+background: white;
+margin: 10% auto;
+padding: 20px;
+border-radius: 5px;
+width: 350px;
+text-align: center;
+}
+
+.close {
+float: right;
+font-size: 25px;
+cursor: pointer;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.google map{
+width: 100%;
+box-shadow: 0 10px 10px rgb(0,0,0,0.1),0 10px 10px rgba(0,0,0,0.1);
+border-radius: 20px;
+overflow: hidden;
+}
+.google map iframe{
+width: 100%;
+}
