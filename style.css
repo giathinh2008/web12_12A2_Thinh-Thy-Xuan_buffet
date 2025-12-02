@@ -354,3 +354,80 @@ box-sizing: border-box;
     height: 450px; /* nên thêm */
     border: 0;
 }
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 10px;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    /* Tự động cho các phần tử chia cột xuống hàng */
+    .grid,
+    .row,
+    .col {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Padding các section nhỏ lại */
+    section {
+        padding: 20px 0;
+    }
+
+    /* Chỉnh form liên hệ */
+    .contact-container {
+        display: block;
+        width: 100%;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    /* Google map */
+    .google-map iframe {
+        height: 300px !important;
+        width: 100% !important;
+    }
+
+    /* Hình ảnh tự co giãn */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Chỉnh tiêu đề */
+    h2, h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* Nút */
+    button, .btn {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    /* Carousel */
+    .carousel-item img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Khắc phục lỗi tràn chiều ngang */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
