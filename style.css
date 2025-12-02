@@ -359,75 +359,37 @@ box-sizing: border-box;
    RESPONSIVE MOBILE
 ================================ */
 
+/* FIX CONTACT MOBILE LAYOUT */
 @media (max-width: 768px) {
 
-    body {
-        padding: 0 10px;
+    /* Cho toàn bộ phần Contact xếp dọc */
+    .contact_content {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .heading h1 {
-        font-size: 24px;
-    }
-
-    /* Tự động cho các phần tử chia cột xuống hàng */
-    .grid,
-    .row,
-    .col {
-        display: block !important;
-        width: 100% !important;
-    }
-
-    /* Padding các section nhỏ lại */
-    section {
-        padding: 20px 0;
-    }
-
-    /* Chỉnh form liên hệ */
-    .contact-container {
-        display: block;
+    /* 2 input Name + Email xuống dòng */
+    .contact_right .contact_input {
+        flex-direction: column;
         width: 100%;
     }
-    .contact-info,
-    .contact-form {
-        width: 100% !important;
-        margin-bottom: 20px;
+
+    /* Sửa lỗi margin làm hỏng layout */
+    .contact_input input:first-of-type {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
-    /* Google map */
-    .google-map iframe {
-        height: 300px !important;
-        width: 100% !important;
-    }
-
-    /* Hình ảnh tự co giãn */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Chỉnh tiêu đề */
-    h2, h3 {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    /* Nút */
-    button, .btn {
+    /* Input message chiếm full width */
+    .contact_right input[type="text"] {
         width: 100%;
-        padding: 12px 16px;
-        font-size: 16px;
+        margin-top: 5px;
     }
 
-    /* Carousel */
-    .carousel-item img {
-        height: auto;
+    /* Nút SEND không bị lệch */
+    .contact_right button {
         width: 100%;
-        object-fit: cover;
-    }
-
-    /* Khắc phục lỗi tràn chiều ngang */
-    * {
-        max-width: 100%;
-        box-sizing: border-box;
+        margin-top: 15px;
+        float: none;   /* Bỏ float right */
     }
 }
